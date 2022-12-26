@@ -27,7 +27,6 @@ jobs:
         run: |
           git config user.name "GitHub"
           git config user.email "noreply@github.com"
-          git add -A
           git diff-index --quiet HEAD || git commit -sm "tailwindcss-update"
           git push
 ```
