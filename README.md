@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: update tailwindcss
-        uses: ZoeyVid/tailwindcss-update@v1
+        uses: ZoeyVid/tailwindcss-update@main
         with:
           input: src/input.css
           output: src/output.css
