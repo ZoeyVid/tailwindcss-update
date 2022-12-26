@@ -21,6 +21,7 @@ jobs:
         with:
           input: src/input.css
           output: src/output.css
+          plugins: "@tailwindcss/forms"
           
       - name: push changes
         run: |
