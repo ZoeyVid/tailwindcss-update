@@ -1,3 +1,3 @@
 FROM node:current-alpine
-RUN npm install -D tailwindcss @tailwindcss/forms
-ENTRYPOINT npx tailwindcss -i $INPUT_INPUT -o $INPUT_OUTPUT
+RUN yarn add -D tailwindcss @tailwindcss/forms
+ENTRYPOINT yarn run tailwindcss -i $INPUT_INPUT -o $INPUT_OUTPUT
