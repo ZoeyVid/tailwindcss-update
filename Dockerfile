@@ -1,2 +1,4 @@
 FROM node:current-alpine
-ENTRYPOINT yarn add --no-lockfile -D tailwindcss $INPUT_PLUGINS && yarn run tailwindcss -i $INPUT_INPUT -o $INPUT_OUTPUT
+COPY run /usr/local/bin/run
+RUN chmod +x /usr/local/bin/run
+ENTRYPOINT ["run"]
