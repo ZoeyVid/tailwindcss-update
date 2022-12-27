@@ -14,7 +14,11 @@ inputs:
     required: true
     default: 'src/output.css'
   plugins:
-    description: 'tailwind plugins'
+    description: 'addtional tailwind plugins'
+    required: false
+    default: ''
+  params:
+    description: 'addtional tailwind params'
     required: false
     default: ''
 runs:
