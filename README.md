@@ -22,6 +22,7 @@ jobs:
           input: src/input.css
           output: src/output.css
           plugins: "@tailwindcss/forms"
+          params: "--minify"
           
       - name: push changes
         run: |
