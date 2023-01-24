@@ -13,10 +13,6 @@ inputs:
     description: 'path of output.css'
     required: true
     default: 'src/output.css'
-  plugins:
-    description: 'addtional tailwind plugins'
-    required: false
-    default: ''
   params:
     description: 'addtional tailwind params'
     required: false
