@@ -21,7 +21,7 @@ jobs:
         with:
           input: src/input.css
           output: src/output.css
-          params: "--minify"
+          params: "--minify --force"
           
       - name: push changes
         run: |
