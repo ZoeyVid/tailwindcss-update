@@ -25,6 +25,7 @@ jobs:
           
       - name: push changes
         run: |
+          git add --force src/output.css
           git config user.name "GitHub"
           git config user.email "noreply@github.com"
           git diff-index --quiet HEAD || git commit -sm "tailwindcss-update"
